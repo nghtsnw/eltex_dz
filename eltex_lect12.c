@@ -72,18 +72,18 @@ void ulitka(void)
     unsigned int shift = 0;
     while (index <= square_size)
     {
-        for (; (i < N-1 - shift) && (index <= square_size); i++, index++) //ïðèáàâëÿåì èíäåêñ ïîçèöèè
+        for (; (i < N-1 - shift) && (index <= square_size); i++, index++) //Ð¿Ñ€Ð¸Ð±Ð°Ð²Ð»ÑÐµÐ¼ Ð¸Ð½Ð´ÐµÐºÑ Ð¿Ð¾Ð·Ð¸Ñ†Ð¸Ð¸
             matrix[j][i] = index;
 
-        for (; (j < N-1 - shift) && (index <= square_size); j++, index++) // ïðèáàâëÿåì èíäåêñ ñòðîêè
+        for (; (j < N-1 - shift) && (index <= square_size); j++, index++) // Ð¿Ñ€Ð¸Ð±Ð°Ð²Ð»ÑÐµÐ¼ Ð¸Ð½Ð´ÐµÐºÑ ÑÑ‚Ñ€Ð¾ÐºÐ¸
             matrix[j][i] = index;
 
-        for (; (i > (0 + shift)) && (index <= square_size); i--, index++) // îòíèìàåì èíäåêñ ïîçèöèè
+        for (; (i > (0 + shift)) && (index <= square_size); i--, index++) // Ð¾Ñ‚Ð½Ð¸Ð¼Ð°ÐµÐ¼ Ð¸Ð½Ð´ÐµÐºÑ Ð¿Ð¾Ð·Ð¸Ñ†Ð¸Ð¸
             matrix[j][i] = index;
 
-        shift++; // òóò ïîÿâëÿåòñÿ ñäâèã
+        shift++; // Ñ‚ÑƒÑ‚ Ð¿Ð¾ÑÐ²Ð»ÑÐµÑ‚ÑÑ ÑÐ´Ð²Ð¸Ð³
 
-        for (; (j > (0 + shift)) && (index <= square_size); j--, index++) // îòíèìàåì èíäåêñ ñòðîêè
+        for (; (j > (0 + shift)) && (index <= square_size); j--, index++) // Ð¾Ñ‚Ð½Ð¸Ð¼Ð°ÐµÐ¼ Ð¸Ð½Ð´ÐµÐºÑ ÑÑ‚Ñ€Ð¾ÐºÐ¸
             matrix[j][i] = index;
     }
 
